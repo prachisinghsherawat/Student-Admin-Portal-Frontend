@@ -41,8 +41,8 @@ export default function StudentDashboard() {
     formDataToSend.append("fileName", formData.resume.name);
 
    axios.post("http://localhost:5000/upload", formDataToSend)
-     .then((response) => {
-       console.log("Response:", response.data);
+     .then((res) => {
+       console.log("data:", res.data);
        setFormData({ name: "", email: "", contact: "", resume: null });
        setLoading(false);
       })
