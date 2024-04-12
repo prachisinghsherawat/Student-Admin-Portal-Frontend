@@ -7,8 +7,7 @@ export default function AdminDashboard() {
   const [pdfData, setPdfData] = useState({});
 
   useEffect(() => {
-    axios
-      .get(
+    axios.get(
         "http://localhost:5000/download"
       )
       .then((res) => {
@@ -17,13 +16,11 @@ export default function AdminDashboard() {
   }, []);
 
   const fetchPdfData = (pdfUrl) => {
+
     axios.get(pdfUrl, { responseType: "arraybuffer" })
-      .then((response) => {
-        setPdfData({ ...pdfData, [pdfUrl]: response.data });
+      .then((res) => {
+        setPdfData({ ...pdfData, [pdfUrl]: res.data });
       })
-      .catch((error) => {
-        console.error("error in pdf", error);
-      });
   };
 
   return (
