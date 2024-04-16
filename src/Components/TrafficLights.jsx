@@ -37,7 +37,7 @@ export default function TrafficLights(){
             ></div>
             <div
               className={`rounded-full h-20 w-20 m-auto mt-2 ${
-                color == "green" ? "bg-green-500" : "bg-gray-500"
+                color == "green" ? "bg-green-600" : "bg-gray-500"
               }`}
             ></div>
           </div>
