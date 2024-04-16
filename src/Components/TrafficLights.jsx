@@ -23,11 +23,11 @@ export default function TrafficLights(){
     return (
       <>
         <div className="m-auto w-1/2 mt-32">
-          <h1 className="text-center">Traffic Lights</h1>
+          <h1 className="text-center font-bold text-2xl">Traffic Lights</h1>
           <div className="bg-black p-3 mt-12 h-92 w-28 m-auto rounded-lg flex flex-col justify-between">
             <div
               className={`rounded-full h-20 w-20 m-auto ${
-                color == "red" ? "bg-red-500" : "bg-gray-500"
+                color == "red" ? "bg-red-600" : "bg-gray-500"
               }`}
             ></div>
             <div
