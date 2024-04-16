@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import TrafficLights from "./TrafficLights";
 
 
@@ -60,12 +60,11 @@ export default function TransactionDetails(){
     )
     }
 
-    console.log("allCategoryTransactions:", allCategoryTransactions);
+    //console.log("allCategoryTransactions:", allCategoryTransactions);
 
     return (
       <>
         <div>
-
           <TrafficLights />
         </div>
       </>
